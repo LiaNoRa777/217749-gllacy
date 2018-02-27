@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анастасия Соловьева](https://up.htmlacademy.ru/htmlcss/20/user/217749).
-* Наставник: [Альбина Токарчук] (https://htmlacademy.ru/profile/id167491).
+* Наставник: [Альбина Токарчук](https://htmlacademy.ru/profile/id167491).
 
 ---
 
