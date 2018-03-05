@@ -27,12 +27,13 @@
             </nav>
             <section class="search">
                 <h2 class="visually-hidden">Поиск по сайту</h2>
+                <a class="search-link" href="#">Открыть форму поиска</a>
                 <form action="#" method="get">
                     <input type="text" name="search" placeholder="Что ищем?">
                 </form>
             </section>
             <ul class="user-navigation">
-                <li><a href="login.html"></a>
+                <li><a href="login.html">Вход</a>
                     <form>
                         <input type="text" name="email" placeholder="Электронная почта">
                         <input type="password" name="password" placeholder="Пароль">
@@ -72,15 +73,14 @@
                         </li>
                     </ul>
                     <input type="radio" id="btn-1" name="toggle" checked>
-                    <input type="radio" id="btn-2" name="toggle" checked>
-                    <input type="radio" id="btn-3" name="toggle" checked>
+                    <input type="radio" id="btn-2" name="toggle">
+                    <input type="radio" id="btn-3" name="toggle">
                     <ul class="slider-controls">
                         <li><label for="btn-1"></label></li>
                         <li><label for="btn-2"></label></li>
                         <li><label for="btn-3"></label></li>
                     </ul>
-                </div>
-                
+                </div>                
                 <a class="button" href="">Давайте оба!</a>            
             </section>              
             
@@ -105,9 +105,20 @@
                         <img src="img/hit.svg" width="61" height="61" alt="Хит">
                         <p class="catalog-price">
                             310 
-                            <span сlass="visualy-hidden">рублей</span>
+                            <span class="visually-hidden">рублей</span>
                             <span class="weight">/кг</span>
                         </p>
+                        <div class="catalog-item-show hit">
+                            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                            <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">    
+                            <img src="img/hit.svg" width="61" height="61" alt="Хит">
+                            <p class="catalog-price">
+                                310 
+                                <span class="visually-hidden">рублей</span>
+                                <span class="weight">/кг</span>
+                            </p>
+                            <a class="button" href="#">Быстрый просмотр</a>
+                        </div>
                     </li>
                     <li class="catalog-item hit">
                         <h3>Сливочно-кофейное с кусочками шоколада</h3>
@@ -115,9 +126,20 @@
                         <img src="img/hit.svg" width="61" height="61" alt="Хит">
                         <p class="catalog-price">
                             380 
-                            <span сlass="visualy-hidden">рублей</span>
+                            <span class="visually-hidden">рублей</span>
                             <span class="weight">/кг</span>
                         </p>
+                        <div class="catalog-item-show hit">
+                            <h3>Сливочно-кофейное с кусочками шоколада</h3>
+                            <img src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                            <img src="img/hit.svg" width="61" height="61" alt="Хит">
+                            <p class="catalog-price">
+                                380 
+                                <span class="visually-hidden">рублей</span>
+                                <span class="weight">/кг</span>
+                            </p>
+                            <a class="button" href="#">Быстрый просмотр</a>
+                        </div>
                     </li>
                     <li class="catalog-item hit">
                         <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
@@ -125,9 +147,20 @@
                         <img src="img/hit.svg" width="61" height="61" alt="Хит">
                         <p class="catalog-price">
                             355 
-                            <span сlass="visualy-hidden">рублей</span>
+                            <span class="visually-hidden">рублей</span>
                             <span class="weight">/кг</span>
                         </p>
+                        <div class="catalog-item-show hit">
+                            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                            <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                            <img src="img/hit.svg" width="61" height="61" alt="Хит">
+                            <p class="catalog-price">
+                                355 
+                                <span class="visually-hidden">рублей</span>
+                                <span class="weight">/кг</span>
+                            </p>
+                            <a class="button" href="#">Быстрый просмотр</a>
+                        </div>
                     </li>
                     <li class="catalog-item hit">
                         <h3>Сливочное крем-брюле с карамельной подливкой</h3>
@@ -135,9 +168,20 @@
                         <img src="img/hit.svg" width="61" height="61" alt="Хит">
                         <p class="catalog-price">
                             415
-                            <span сlass="visualy-hidden">рублей</span>
+                            <span class="visually-hidden">рублей</span>
                             <span class="weight">/кг</span>
                         </p>
+                        <div class="catalog-item-show hit">
+                            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+                            <img src="img/creame-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                            <img src="img/hit.svg" width="61" height="61" alt="Хит">
+                            <p class="catalog-price">
+                                415
+                                <span class="visually-hidden">рублей</span>
+                                <span class="weight">/кг</span>
+                            </p>
+                        </div>
+                        <a class="button" href="#">Быстрый просмотр</a>
                     </li>
                 </ul>
             </section>
@@ -146,16 +190,16 @@
                 <h2 class="visually-hidden">Преимущества магазина Глейси</h2>
                 <p class="features-desc">Магазин Глэйси &mdash; это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
                 <ul class="features-list">
-                    <li class="feuture-item technologies">
+                    <li class="feature-item technologies">
                         Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
                     </li>
-                    <li class="feuture-item quality">
+                    <li class="feature-item quality">
                         Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                     </li>
-                    <li class="feuture-item purchase">
+                    <li class="feature-item purchase">
                         Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
                     </li>
-                    <li class="feuture-item delivery">
+                    <li class="feature-item delivery">
                         Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
                     </li>
                 </ul>
@@ -171,7 +215,7 @@
                 <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form action="#" method="post">
                     <input type="text" name="subscribe" placeholder="Электронная почта">
-                    <button type="submit" value="Отправить"></button>
+                    <button class="button" type="submit">Отправить</button>
                 </form>
             </section>
             
@@ -179,7 +223,7 @@
                 <h2 class="visually-hidden">Как добраться</h2>
                 <img src="img/map.jpg" width="192" height="430" alt="Мы находимся по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
                 <section class="map-contacts">
-                    <h2 class="visually-hidden">Контакты для связи</h2>
+                    <h3 class="visually-hidden">Контакты для связи</h3>
                     <p class="map-address">
                         Адрес главного офиса<br>
                         и офлайн-магазина:<br>
@@ -199,10 +243,10 @@
         
         <footer>
             <ul class="footer-social">
-                <li><a class="solcial-btn twitter" href="#">Твиттер</a></li>
-                <li><a class="solcial-btn instagram" href="#">Инстаграм</a></li>
-                <li><a class="solcial-btn facebook" href="#">Фейсбук</a></li>
-                <li><a class="solcial-btn vkontakte" href="#">Вконтакте</a></li>
+                <li><a class="social-btn twitter" href="#">Твиттер</a></li>
+                <li><a class="social-btn instagram" href="#">Инстаграм</a></li>
+                <li><a class="social-btn facebook" href="#">Фейсбук</a></li>
+                <li><a class="social-btn vkontakte" href="#">Вконтакте</a></li>
             </ul>
             <ul class="company-about">
                 <li><a href="#">Для поставщиков</a></li>
@@ -222,7 +266,7 @@
                 <input type="text" name="fullname" placeholder="Как вас зовут?">
                 <input type="text" name="e-mail" placeholder="Ваша почта для ответа?">
                 <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
-                <button class="button" type="submit" value="Отправить"></button>
+                <button class="button" type="submit">Отправить</button>
             </form>
             <button class="modal-close">Закрыть форму</button>
         </section>
