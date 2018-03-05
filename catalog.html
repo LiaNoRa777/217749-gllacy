@@ -76,6 +76,55 @@
             
             <h1 class="inner-title">Сливочное мороженное</h1>
             
+            <section class="filters">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <form action="#" method="get">
+                    <label for="sorting">Сортировка</label>
+                    <select id="sorting">
+                        <option>по популярности</option>
+                    </select>
+                    Жирность
+                    <label>
+                        <input type="radio" name="fattiness" value="0">
+                        0%
+                    </label>  
+                    <label>
+                        <input type="radio" name="fattiness" value="less10" checked>
+                        до 10%
+                    </label>  
+                    <label>
+                        <input type="radio" name="fattiness" value="less30">
+                        до 30%
+                    </label>
+                    <label>
+                        <input type="radio" name="fattiness" value="more30">
+                        выше 30%
+                    </label>
+                    Наполнители:
+                    <label>
+                        <input type="checkbox" name="chocolate" checked>
+                        шоколадные
+                    </label>    
+                    <label>
+                        <input type="checkbox" name="sugar-powders" checked>
+                        сахарные присыпки
+                    </label>   
+                    <label> 
+                        <input type="checkbox" name="friuts">
+                        фрукты
+                    </label>  
+                    <label>  
+                        <input type="checkbox" name="syrop">
+                        сиропы
+                    </label>  
+                    <label>  
+                        <input type="checkbox" name="jam">
+                        джемы
+                    </label>
+                    <button type="submit" value="Применить"></button>
+                </form>
+            </section>
+            
             <section class="catalog">
                 <h2 class="visually-hidden">Список вкусов сливочного мороженого</h2>
                 <ul class="catalog-list">
