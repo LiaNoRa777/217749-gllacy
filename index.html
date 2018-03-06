@@ -7,37 +7,37 @@
     <body>
         
         <header class="main-header">
+            <a class="header-logo">
+                <img src="img/header-logo.png" width="154" height="64" alt="Логотип магазина Глейси">
+            </a>
             <nav class="main-navigation">
-                <a class="header-logo">
-                    <img src="img/header-logo.png" width="154" height="64" alt="Логотип магазина Глейси">
-                </a>
                 <ul class="site-navigation">
-                    <li><a href="catalog.html">Каталог</a>
+                    <li><a href="#">Каталог</a>
                         <ul class="sub-menu">
-                            <li><a href="news.html">Новинки</a></li>
+                            <li><a href="#">Новинки</a></li>
                             <li><a href="catalog.html">Сливочное</a></li>
-                            <li><a href="catalog.html">Щербеты</a></li>
-                            <li><a href="catalog.html">Фруктовый лед</a></li>
-                            <li><a href="catalog.html">Мелорин</a></li>
+                            <li><a href="#">Щербеты</a></li>
+                            <li><a href="#">Фруктовый лед</a></li>
+                            <li><a href="#">Мелорин</a></li>
                         </ul>
                     </li>
                     <li><a href="delivery-pice.html">Доставка и оплата</a></li>
                     <li><a href="company.html">О Компании</a></li>
                 </ul>
             </nav>
-            <section class="search">
-                <h2 class="visually-hidden">Поиск по сайту</h2>
+            <div class="search">
                 <a class="search-link" href="#">Открыть форму поиска</a>
                 <form action="#" method="get">
-                    <input type="text" name="search" placeholder="Что ищем?">
+                    <input type="search" name="search" placeholder="Что ищем?">
+                    <button class="visually-hidden" type="submit">Найти</button>
                 </form>
-            </section>
+            </div>
             <ul class="user-navigation">
                 <li><a href="login.html">Вход</a>
                     <form>
-                        <input type="text" name="email" placeholder="Электронная почта">
+                        <input type="email" name="email" placeholder="Электронная почта">
                         <input type="password" name="password" placeholder="Пароль">
-                        <button class="button button-entrance">Войти</button>
+                        <button class="button button-entrance" type="submit">Войти</button>
                         <a class="remember-password" href="#">Забыли пароль?</a>
                         <a class="new-registration" href="#">Новая регистрация</a>
                     </form>    
@@ -47,8 +47,8 @@
                 <h2 class="vislually-hidden">Корзина</h2>
                 <a href="#">Пусто</a>                                       
             </section>
-            <p class="work-time">С 10 до 20, ежедневно<br>
-                <span>8 812 450-25-25</span>         
+            <p class="work-time">С 10 до 20, ежедневно
+                <a href="tel:88124502525">8 812 450-25-25</a>         
             </p>
         </header>
 
@@ -62,14 +62,17 @@
                         <li class="slider-item">
                             <img src="img/slide1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
                             <p>Крем-брюле и пломбир с малиновым джемом</p>
+                            <a class="button" href="#">Давайте оба!</a>
                         </li>
                         <li class="slider-item">
                             <img src="img/slide2.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
                             <p>Шоколадный пломбир и лимонный сорбет</p>
+                            <a class="button" href="#">Давайте оба!</a>
                         </li>
                         <li class="slider-item">
                             <img src="img/slide3.png" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
                             <p>Пломбир с помадкой и клубничный щербет</p>
+                            <a class="button" href="#">Давайте оба!</a>
                         </li>
                     </ul>
                     <input type="radio" id="btn-1" name="toggle" checked>
@@ -80,8 +83,7 @@
                         <li><label for="btn-2"></label></li>
                         <li><label for="btn-3"></label></li>
                     </ul>
-                </div>                
-                <a class="button" href="">Давайте оба!</a>            
+                </div>                         
             </section>              
             
             <section class="gift">
@@ -108,17 +110,7 @@
                             <span class="visually-hidden">рублей</span>
                             <span class="weight">/кг</span>
                         </p>
-                        <div class="catalog-item-show hit">
-                            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                            <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">    
-                            <img src="img/hit.svg" width="61" height="61" alt="Хит">
-                            <p class="catalog-price">
-                                310 
-                                <span class="visually-hidden">рублей</span>
-                                <span class="weight">/кг</span>
-                            </p>
-                            <a class="button" href="#">Быстрый просмотр</a>
-                        </div>
+                        <a class="button" href="#">Быстрый просмотр</a>
                     </li>
                     <li class="catalog-item hit">
                         <h3>Сливочно-кофейное с кусочками шоколада</h3>
@@ -129,17 +121,7 @@
                             <span class="visually-hidden">рублей</span>
                             <span class="weight">/кг</span>
                         </p>
-                        <div class="catalog-item-show hit">
-                            <h3>Сливочно-кофейное с кусочками шоколада</h3>
-                            <img src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-                            <img src="img/hit.svg" width="61" height="61" alt="Хит">
-                            <p class="catalog-price">
-                                380 
-                                <span class="visually-hidden">рублей</span>
-                                <span class="weight">/кг</span>
-                            </p>
-                            <a class="button" href="#">Быстрый просмотр</a>
-                        </div>
+                        <a class="button" href="#">Быстрый просмотр</a>
                     </li>
                     <li class="catalog-item hit">
                         <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
@@ -150,17 +132,7 @@
                             <span class="visually-hidden">рублей</span>
                             <span class="weight">/кг</span>
                         </p>
-                        <div class="catalog-item-show hit">
-                            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                            <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                            <img src="img/hit.svg" width="61" height="61" alt="Хит">
-                            <p class="catalog-price">
-                                355 
-                                <span class="visually-hidden">рублей</span>
-                                <span class="weight">/кг</span>
-                            </p>
-                            <a class="button" href="#">Быстрый просмотр</a>
-                        </div>
+                        <a class="button" href="#">Быстрый просмотр</a>
                     </li>
                     <li class="catalog-item hit">
                         <h3>Сливочное крем-брюле с карамельной подливкой</h3>
@@ -171,16 +143,6 @@
                             <span class="visually-hidden">рублей</span>
                             <span class="weight">/кг</span>
                         </p>
-                        <div class="catalog-item-show hit">
-                            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-                            <img src="img/creame-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-                            <img src="img/hit.svg" width="61" height="61" alt="Хит">
-                            <p class="catalog-price">
-                                415
-                                <span class="visually-hidden">рублей</span>
-                                <span class="weight">/кг</span>
-                            </p>
-                        </div>
                         <a class="button" href="#">Быстрый просмотр</a>
                     </li>
                 </ul>
@@ -214,7 +176,7 @@
                 <h2 class="visually-hidden">Подписка на нашу рассылку</h2>
                 <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form action="#" method="post">
-                    <input type="text" name="subscribe" placeholder="Электронная почта">
+                    <input type="email" name="subscribe" placeholder="Электронная почта">
                     <button class="button" type="submit">Отправить</button>
                 </form>
             </section>
@@ -222,21 +184,20 @@
             <section class="map">
                 <h2 class="visually-hidden">Как добраться</h2>
                 <img src="img/map.jpg" width="192" height="430" alt="Мы находимся по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-                <section class="map-contacts">
+                <div class="map-contacts">
                     <h3 class="visually-hidden">Контакты для связи</h3>
                     <p class="map-address">
-                        Адрес главного офиса<br>
-                        и офлайн-магазина:<br>
+                        <span class="map-desc">Адрес главного офиса</span>
+                        <span class="map-desc">и офлайн-магазина:</span>
                         <span class="map-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
                     </p>
                     <p class="map-address">
-                        Для заказов по телефону:
+                        <span class="map-desc">Для заказов по телефону:</span>
                         <span class="map-info">8 812 450-25-25</span>
-                        <br>
-                        (с 10 до 20 ежедневно)
+                        <span class="map-desc">(с 10 до 20 ежедневно)</span>
                     </p>
-                    <a class="button" href="#">Форма обратной связи</a>
-                </section>                
+                    <a class="button" href="feedback-form.html">Форма обратной связи</a>
+                </div>                
             </section>            
             
         </main>
@@ -264,7 +225,7 @@
             <h2>Мы обязательно вам ответим!</h2>
             <form action="#" method="post">
                 <input type="text" name="fullname" placeholder="Как вас зовут?">
-                <input type="text" name="e-mail" placeholder="Ваша почта для ответа?">
+                <input type="email" name="e-mail" placeholder="Ваша почта для ответа?">
                 <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
                 <button class="button" type="submit">Отправить</button>
             </form>
