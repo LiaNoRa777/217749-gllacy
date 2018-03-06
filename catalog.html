@@ -63,7 +63,7 @@
                 <b>Итого: 750 руб.</b>
                 <a class="button" href="#">Оформить заказ</a>                                         
             </section>
-            <p class="work-time">С 10 до 20, ежедневно<br>
+            <p class="work-time">С 10 до 20, ежедневно
                 <a href="tel:88124502525">8 812 450-25-25</a>         
             </p>
         </header>
@@ -80,24 +80,23 @@
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form action="#" method="get">
-                    <p class="filters-form-group">
-                        <span class="filter-title">
+                    <fieldset class="filters-form-group">
+                        <legend class="filter-title">
                             <label for="sorting">Сортировка</label>
-                        </span>
+                        </legend>
                         <select id="sorting">
                             <option>по популярности</option>
                             <option>сначала недорогие</option>
                             <option>сначала дорогие</option>
                             <option>по жирности</option>
                         </select>
-                    </p>
-                    <p class="filters-form-group">
-                        <span class="filter-title">Цена: 100 руб. – 500 руб.</span>
-                        <input type="range" name="price-min" value="100" min="0" max="800">
-                        <input type="range" name="price-max" value="500" min="0" max="800">
-                    </p>
-                    <p class="filters-form-group">
-                        <span class="filter-title">Жирность</span>
+                    </fieldset>
+                    <fieldset class="filters-form-group">
+                        <legend class="filter-title">Цена: 100 руб. – 500 руб.</legend>
+                        <div class="range"></div>
+                    </fieldset>
+                    <fieldset class="filters-form-group">
+                        <legend class="filter-title">Жирность</legend>
                         <label>
                             <input type="radio" name="fattiness" value="0">
                             0%
@@ -114,9 +113,9 @@
                             <input type="radio" name="fattiness" value="31">
                             выше 30%
                         </label>
-                    </p>
-                    <p class="filters-form-group">
-                        <span class="filter-title">Наполнители:</span>
+                    </fieldset>
+                    <fieldset class="filters-form-group">
+                        <legend class="filter-title">Наполнители:</legend>
                         <label>
                             <input type="checkbox" name="chocolate" checked>
                             шоколадные
@@ -137,7 +136,7 @@
                             <input type="checkbox" name="jam">
                             джемы
                         </label>
-                    </p>
+                    </fieldset>
                     <button type="submit">Применить</button>
                 </form>
             </section>
