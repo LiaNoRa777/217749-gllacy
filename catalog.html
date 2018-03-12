@@ -27,16 +27,19 @@
             </nav>
             <div class="search">
                 <a class="search-link" href="#">Открыть форму поиска</a>
-                <form action="#" method="get">
-                    <input type="search" name="search" placeholder="Что ищем?">
+                <form action="#" method="post">
+                    <label class="visually-hidden" for="search">Что ищем?</label>
+                    <input type="search" name="search" id="search" placeholder="Что ищем?">
                     <button class="visually-hidden" type="submit">Найти</button>
                 </form>
             </div>
             <ul class="user-navigation">
                 <li><a href="login.html">Вход</a>
-                    <form>
-                        <input type="email" name="email" placeholder="Электронная почта">
-                        <input type="password" name="password" placeholder="Пароль">
+                    <form action="#" method="post">
+                        <label class="visually-hidden" for="user-email">Электронная почта</label>
+                        <input type="email" name="user-email" id="user-email" placeholder="Электронная почта">
+                        <label class="visually-hidden" for="user-password">Пароль</label>
+                        <input type="password" name="user-password" id="user-password" placeholder="Пароль">
                         <button class="button button-entrance" type="submit">Войти</button>
                         <a class="remember-password" href="#">Забыли пароль?</a>
                         <a class="new-registration" href="#">Новая регистрация</a>
@@ -48,14 +51,14 @@
                 <a href="#">2 товара</a>
                 <ul class="cart-list">
                     <li class="cart-item">
-                        <button class="delete" type="button"></button>  
+                        <button class="delete" type="button">Удалить товар из корзины</button>  
                         <img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                         <p>Пломбир с апельсиновым джемом</p>
                         <p>1,5 кг х <span>200 руб.</span></p>
                         <p>300 руб.</p>
                      </li>
                     <li class="cart-item">
-                        <button class="delete" type="button"></button>
+                        <button class="delete" type="button">Удалить товар из корзины</button>
                         <img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                         <p>Клубничный пломбир с присыпкой из белого шоколада</p>
                         <p>1,5 кг х <span>300 руб.</span></p>
@@ -86,7 +89,7 @@
                         <legend class="filter-title">
                             <label for="sorting">Сортировка</label>
                         </legend>
-                        <select id="sorting">
+                        <select name="sorting" id="sorting">
                             <option>по популярности</option>
                             <option>сначала недорогие</option>
                             <option>сначала дорогие</option>
@@ -100,42 +103,42 @@
                     <fieldset class="filters-form-group">
                         <legend class="filter-title">Жирность</legend>
                         <label>
-                            <input type="radio" name="fattiness" value="0">
+                            <input class="visually-hidden" type="radio" name="fattiness" value="0">
                             0%
                         </label>  
                         <label>
-                            <input type="radio" name="fattiness" value="10" checked>
+                            <input class="visually-hidden" type="radio" name="fattiness" value="10" checked>
                             до 10%
                         </label>  
                         <label>
-                            <input type="radio" name="fattiness" value="29">
+                            <input class="visually-hidden" type="radio" name="fattiness" value="29">
                             до 30%
                         </label>
                         <label>
-                            <input type="radio" name="fattiness" value="31">
+                            <input class="visually-hidden" type="radio" name="fattiness" value="31">
                             выше 30%
                         </label>
                     </fieldset>
                     <fieldset class="filters-form-group">
                         <legend class="filter-title">Наполнители:</legend>
                         <label>
-                            <input type="checkbox" name="chocolate" checked>
+                            <input class="visually-hidden" type="checkbox" name="chocolate" checked>
                             шоколадные
                         </label>    
                         <label>
-                            <input type="checkbox" name="sugar-powders" checked>
+                            <input class="visually-hidden" type="checkbox" name="sugar-powders" checked>
                             сахарные присыпки
                         </label>   
                         <label> 
-                            <input type="checkbox" name="friuts">
+                            <input class="visually-hidden" type="checkbox" name="friuts">
                             фрукты
                         </label>  
                         <label>  
-                            <input type="checkbox" name="syrop">
+                            <input class="visually-hidden" type="checkbox" name="syrop">
                             сиропы
                         </label>  
                         <label>  
-                            <input type="checkbox" name="jam">
+                            <input class="visually-hidden" type="checkbox" name="jam">
                             джемы
                         </label>
                     </fieldset>

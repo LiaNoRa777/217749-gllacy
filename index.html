@@ -27,16 +27,19 @@
             </nav>
             <div class="search">
                 <a class="search-link" href="#">Открыть форму поиска</a>
-                <form action="#" method="get">
-                    <input type="search" name="search" placeholder="Что ищем?">
+                <form action="#" method="post">
+                    <label class="visually-hidden" for="search">Что ищем?</label>
+                    <input type="search" name="search" id="search" placeholder="Что ищем?">
                     <button class="visually-hidden" type="submit">Найти</button>
                 </form>
             </div>
             <ul class="user-navigation">
                 <li><a href="login.html">Вход</a>
-                    <form>
-                        <input type="email" name="email" placeholder="Электронная почта">
-                        <input type="password" name="password" placeholder="Пароль">
+                    <form action="#" method="post">
+                        <label class="visually-hidden" for="user-email">Электронная почта</label>
+                        <input type="email" name="user-email" id="user-email" placeholder="Электронная почта">
+                        <label class="visually-hidden" for="user-password">Пароль</label>
+                        <input type="password" name="user-password" id="user-password" placeholder="Пароль">
                         <button class="button button-entrance" type="submit">Войти</button>
                         <a class="remember-password" href="#">Забыли пароль?</a>
                         <a class="new-registration" href="#">Новая регистрация</a>
@@ -192,7 +195,8 @@
                 <h2 class="visually-hidden">Подписка на нашу рассылку</h2>
                 <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form action="#" method="post">
-                    <input type="email" name="subscribe" placeholder="Электронная почта">
+                    <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+                    <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта">
                     <button class="button" type="submit">Отправить</button>
                 </form>
             </section>
@@ -240,12 +244,15 @@
         <section class="modal modal-feedback">
             <h2>Мы обязательно вам ответим!</h2>
             <form action="#" method="post">
-                <input type="text" name="fullname" placeholder="Как вас зовут?">
-                <input type="email" name="e-mail" placeholder="Ваша почта для ответа?">
-                <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
+                <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+                <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
+                <label class="visually-hidden" for="feedback-email">Ваш e-mail</label>
+                <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+                <label class="visually-hidden" for="feedback-message"></label>
+                <textarea name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
                 <button class="button" type="submit">Отправить</button>
             </form>
-            <button class="modal-close">Закрыть форму</button>
+            <button class="modal-close" type="button">Закрыть форму</button>
         </section>
         
     </body>
