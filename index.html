@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         
@@ -29,20 +32,20 @@
                 <a class="search-link" href="#">Открыть форму поиска</a>
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <label class="visually-hidden" for="search">Что ищем?</label>
-                    <input type="search" name="search" id="search" placeholder="Что ищем?">
+                    <input class="placeholder" type="search" name="search" id="search" placeholder="Что ищем?">
                     <button class="visually-hidden" type="submit">Найти</button>
                 </form>
             </div>
             <ul class="user-navigation">
-                <li><a href="login.html">Вход</a>
+                <li><a class="entrance-link" href="login.html">Вход</a>
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <p class="user-form-group">
                             <label class="visually-hidden" for="user-email">Электронная почта</label>
-                            <input type="email" name="user-email" id="user-email" placeholder="Электронная почта">
+                            <input class="placeholder" type="email" name="user-email" id="user-email" placeholder="Электронная почта">
                         </p>
                         <p class="user-form-group">
                             <label class="visually-hidden" for="user-password">Пароль</label>
-                            <input type="password" name="user-password" id="user-password" placeholder="Пароль">
+                            <input class="placeholder" type="password" name="user-password" id="user-password" placeholder="Пароль">
                         </p>    
                         <button class="button button-entrance" type="submit">Войти</button>
                         <a class="remember-password" href="#">Забыли пароль?</a>
@@ -52,7 +55,7 @@
             </ul>
             <section class="cart">
                 <h2 class="vislually-hidden">Корзина</h2>
-                <a href="#">Пусто</a>                                       
+                <a class="cart-link" href="#">Пусто</a>                                       
             </section>
             <p class="work-time">С 10 до 20, ежедневно
                 <a href="tel:88124502525">8 812 450-25-25</a>         
@@ -82,9 +85,9 @@
                             <a class="button" href="#">Давайте оба!</a>
                         </li>
                     </ul>
-                    <input type="radio" id="btn-1" name="toggle" checked>
-                    <input type="radio" id="btn-2" name="toggle">
-                    <input type="radio" id="btn-3" name="toggle">
+                    <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+                    <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+                    <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
                     <ul class="slider-controls">
                         <li><label for="btn-1">Слайд 1</label></li>
                         <li><label for="btn-2">Слайд 2</label></li>
@@ -93,13 +96,13 @@
                 </div>                         
             </section>              
             
-            <section class="gift">
+            <section class="gift gift-strawberry">
                 <h2 class="gift-title">Малинка даром!</h2>   
                 <p class="gift-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p> 
                 <a class="button" href="#">Хочу варенье!</a>
             </section>
             
-            <section class="gift">
+            <section class="gift gift-chocolate">
                 <h2 class="gift-title">Шоколадки даром!</h2>   
                 <p class="gift-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p> 
                 <a class="button" href="#">Хочу шоколадки!</a>
@@ -196,11 +199,11 @@
             </article>
             
             <section class="subscribe">
-                <h2 class="visually-hidden">Подписка на нашу рассылку</h2>
-                <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                <h2 class="visually-hidden">Подписка на нашу рассылку</h2>                
                 <form action="https://echo.htmlacademy.ru" method="post">
+                    <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                     <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-                    <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта">
+                    <input class="placeholder" type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта">
                     <button class="button" type="submit">Отправить</button>
                 </form>
             </section>
@@ -217,8 +220,8 @@
                     </p>
                     <p class="map-address">
                         <span class="map-desc">Для заказов по телефону:</span>
-                        <a class="map-info" href="tel:88124502525">8 812 450-25-25</a>
-                        <span class="map-desc">(с 10 до 20 ежедневно)</span>
+                        <a class="map-info map-tel" href="tel:88124502525">8 812 450-25-25</a>
+                        <span class="map-time">(с 10 до 20 ежедневно)</span>
                     </p>
                     <a class="button" href="feedback-form.html">Форма обратной связи</a>
                 </div>                
@@ -234,15 +237,16 @@
                 <li><a class="social-btn vkontakte" href="#">Вконтакте</a></li>
             </ul>
             <ul class="company-about">
-                <li><a href="#">Для поставщиков</a></li>
+                <li class="supply"><a href="#">Для поставщиков</a></li>
                 <li><a href="#">О производстве</a></li>
                 <li><a href="#">Наши документы</a></li>
                 <li><a href="#">Экологические стандарты</a></li>
             </ul>
             <p class="copyright">
                 <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"></a>
-                Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
+                Сделано в <a class="copyright-desc" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
             </p>
+            
         </footer>
         
         <section class="modal modal-feedback">
@@ -250,15 +254,15 @@
             <form action="https://echo.htmlacademy.ru" method="post">
                 <p class="modal-form-group">
                     <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-                    <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?" required>
+                    <input class="placeholder" type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?" required>
                 </p> 
                 <p class="modal-form-group">   
                     <label class="visually-hidden" for="feedback-email">Ваш e-mail</label>
-                    <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
+                    <input class="placeholder" type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
                 </p> 
                 <p class="modal-form-group">   
                     <label class="visually-hidden" for="feedback-message"></label>
-                    <textarea name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..." required></textarea>
+                    <textarea class="placeholder" name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..." required></textarea>
                 </p>
                 <button class="button" type="submit">Отправить</button>
             </form>
