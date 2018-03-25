@@ -5,7 +5,13 @@ body {
     font-size: 16px;
     line-height: 22px;
     font-weight: normal;
-    color: #ffffff;
+    color: #ffffff; 
+    background-color: #849d8f;
+}
+
+.site-wrapper {
+    position: relative;
+    z-index: 2;
     background-color: #849d8f;
 }
 
@@ -50,6 +56,7 @@ img {
     background-color: #ec573b;
     background-image: linear-gradient(to bottom, #f26843, #e74a35);
     box-shadow: 0 1px 2px 0 #ac1000;
+    cursor: pointer;
 }
 
 .button:hover,
@@ -147,6 +154,7 @@ img {
 .sub-menu {
     display: none;
     position: absolute;
+    z-index: 2;
     left: -7px;
     margin: 0;
     margin-top: 5px;    
@@ -210,6 +218,7 @@ img {
 
 .search {
     position: relative;
+    z-index: 2;
     margin-right: 10px;
     margin-top: 23px;
     margin-left: auto;    
@@ -295,6 +304,7 @@ img {
 
 .user-navigation {
     position: relative;
+    z-index: 2;
     margin: 0;
     margin-top: 23px;
     margin-right: 10px;
@@ -619,11 +629,39 @@ img {
     background-image: url("../img/filter-checkbox-on.svg");
 }
 
+.slider-image {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1; 
+    top:0;
+    left: 0;
+    right: 0;
+    width: 1045px;
+    height: 881px;
+    margin: 0 auto;  
+}
+
+.gallery-inner {
+    position: relative;
+    margin-bottom: 41px;
+    min-height: 533px;
+}
+
 .gallery-sliders,
 .slider-controls {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.slider-item {
+    visibility: hidden;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+    text-align: center;
 }
 
 .slider-item img {
@@ -648,29 +686,45 @@ img {
     line-height: 1;
 }
 
-.slider-item {
-    text-align: center;
-}
-
-.slider-item:nth-child(2),
-.slider-item:nth-child(3) {
-    display: none;
-}
-
-.slider-controls li {
-    display: block;
-    width: 20px;
-    height: 20px;
-    font-size: 0;
-}
-
-.slider-item .button {
+.slider-item .button {    
     padding: 8px 41px;
     padding-bottom: 11px;
     font-size: 32px;
     line-height: 44px;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
     border-radius: 32px;
+}
+
+.slider-controls {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 22px;
+}
+
+.slider-controls li {   
+    margin-right: 8px;
+    font-size: 0;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;    
+    vertical-align: top;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#btn1:checked ~ .slider-image:first-of-type {
+    visibility: visible;
+}
+
+#btn1:checked ~ label[for="btn-1"] {
+    background-color: #ffffff; 
 }
 
 .index-columns {
