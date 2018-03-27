@@ -667,7 +667,6 @@ img {
     appearance: none;
 }
 
-.filter-sorting:hover,
 .filter-sorting:focus-within {
     background-color: #ffffff;
 }
@@ -675,7 +674,6 @@ img {
 .filter-sorting:hover .visually-hidden-select,
 .filter-sorting:focus-within .visually-hidden-select {
     color: #323232;
-    background-color: #ffffff;
 }
 
 .visually-hidden-select::-ms-expand {
@@ -684,7 +682,38 @@ img {
 }
 
 .filters-form-group .range {
+    position: relative;
+    display: flex;
+    width: 220px;
+    height: 36px;
     background-color: #aabbb1;
+    border-radius: 18px;
+}
+
+.filters-form-group .scale {
+    width: 176px;
+    height: 2px;    
+    margin: auto;
+    background-color: rgba(248, 247, 244, 0.5);
+}
+
+.filters-form-group .bar {
+    width: 98px;
+    height: 2px;
+    margin-left: 23px;
+    background-color: #f8f7f4;
+}
+
+.filters-form-group .range-toggle {
+    position: absolute;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    background-color: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
 }
 
 .filters-choice {
