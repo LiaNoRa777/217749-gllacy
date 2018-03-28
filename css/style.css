@@ -241,12 +241,17 @@ img {
 }
 
 .search:hover .search-link,
-.search:focus-within .search-link {
+.search-link:focus {
     background-color: #f8f7f4;
     background-image: url("../img/search-hover.svg");
     background-position: 50% 50%;   
 }
 
+.search:focus-within .search-link {
+    background-color: #f8f7f4;
+    background-image: url("../img/search-hover.svg");
+    background-position: 50% 50%;   
+}
 .search-form {
     display: none;
     position: absolute;
@@ -333,7 +338,13 @@ img {
 }
 
 .user-navigation:hover .entrance-link,
-.user-navigation:focus-within .entrance-link {    
+.entrance-link:focus {    
+    color: #323232;
+    background-color: #f8f7f4;
+    background-image: url("../img/entrance-hover.svg");
+}
+
+.user-navigation:focus-within .entrance-link {
     color: #323232;
     background-color: #f8f7f4;
     background-image: url("../img/entrance-hover.svg");
@@ -423,6 +434,12 @@ img {
 }
 
 .cart:hover .cart-link,
+.cart-link:focus  {
+    color: #333333;
+    background-color: #f7f6f3; 
+    background-image: url("../img/cart-full.svg");
+}
+
 .cart:focus-within .cart-link {
     color: #333333;
     background-color: #f7f6f3; 
@@ -446,7 +463,10 @@ img {
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.cart:hover .cart-hover,
+.cart:hover .cart-hover {
+    display: block;
+}
+
 .cart:focus-within .cart-hover {
     display: block;
 }
@@ -500,6 +520,7 @@ img {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border: 0;
+    cursor: pointer;
 }
 
 .cart-item span {
@@ -714,7 +735,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 36px;
+    height: 36px;
     font-size: 16px;
     line-height: 18px;
     background-color: #aabbb1;
@@ -1086,6 +1107,10 @@ img {
 }
 
 .catalog-item:hover .button,
+.catalog-item:focus .button{
+    display: inline-block;
+}
+
 .catalog-item:focus-within .button {
     display: inline-block;
 }
@@ -1102,6 +1127,10 @@ img {
 }
 
 .catalog-item:hover::before,
+.catalog-item:focus::before {
+    background-color: rgba(248, 247, 244, 0.2);
+}
+
 .catalog-item:focus-within::before {
     background-color: rgba(248, 247, 244, 0.2);
 }
@@ -1506,6 +1535,10 @@ img {
     margin: 0;
     font-size: 12px;
     line-height: 18px;
+}
+
+.copyright a {
+    width: 108px;
 }
 
 .copyright-desc {
