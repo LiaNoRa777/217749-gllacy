@@ -40,25 +40,24 @@
                             <button class="visually-hidden" type="submit">Найти</button>
                         </form>
                     </div>
-                    <ul class="user-navigation">
-                        <li><a class="entrance-link" href="login.html">Вход</a>
-                            <form class="user-navigation-form" action="https://echo.htmlacademy.ru" method="post">
-                                <p class="user-form-group">
-                                    <label class="visually-hidden" for="user-email">Электронная почта</label>
-                                    <input class="form-field" type="email" name="user-email" id="user-email" placeholder="Электронная почта">
-                                </p>
-                                <p class="user-form-group">
-                                    <label class="visually-hidden" for="user-password">Пароль</label>
-                                    <input class="form-field" type="password" name="user-password" id="user-password" placeholder="Пароль">
-                                </p>    
-                                <button class="button button-entrance" type="submit">Войти</button>
-                                <div class="help-links">
-                                    <a class="help-link" href="#">Забыли пароль?</a>
-                                    <a class="help-link" href="#">Новая регистрация</a>
-                                </div>
-                            </form>    
-                        </li>
-                    </ul>
+                    <div class="login">
+                        <a class="entrance-link" href="login.html">Вход</a>
+                        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                            <p class="login-form-group">
+                                <label class="visually-hidden" for="user-email">Электронная почта</label>
+                                <input class="form-field" type="email" name="user-email" id="user-email" placeholder="Электронная почта">
+                            </p>
+                            <p class="login-form-group">
+                                <label class="visually-hidden" for="user-password">Пароль</label>
+                                <input class="form-field" type="password" name="user-password" id="user-password" placeholder="Пароль">
+                            </p>    
+                            <button class="button button-entrance" type="submit">Войти</button>
+                            <div class="help-links">
+                                <a class="help-link" href="#">Забыли пароль?</a>
+                                <a class="help-link" href="#">Новая регистрация</a>
+                            </div>
+                        </form> 
+                    </div>
                     <section class="cart">
                         <h2 class="visually-hidden">Корзина</h2>
                         <a class="cart-link" href="#">Пусто</a>                                  
@@ -79,15 +78,15 @@
                     <h2 class="visually-hidden">Фотогалерея</h2>  
                     <div class="gallery-inner">              
                         <ul class="gallery-sliders">
-                            <li class="slider-item">                                                            
+                            <li class="slider-item slider-item1">                                                            
                                 <p>Крем-брюле и пломбир с малиновым джемом</p>
                                 <a class="button" href="#">Давайте оба!</a>
                             </li>
-                            <li class="slider-item">                                
+                            <li class="slider-item slider-item2">                                
                                 <p>Шоколадный пломбир и лимонный сорбет</p>
                                 <a class="button" href="#">Давайте оба!</a>
                             </li>
-                            <li class="slider-item">                                
+                            <li class="slider-item slider-item3">                                
                                 <p>Пломбир с помадкой и клубничный щербет</p>
                                 <a class="button" href="#">Давайте оба!</a>
                             </li>
@@ -117,7 +116,7 @@
                 <section class="catalog container">
                     <h2 class="visually-hidden">Популярные товары</h2>
                     <ul class="catalog-list">
-                        <li class="catalog-item hit" tabindex="0">
+                        <li class="catalog-item hit">
                             <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                             <img class="hit-img" src="img/hit.svg" width="61" height="61" alt="Хит">
                             <p class="catalog-price">
@@ -128,7 +127,7 @@
                             <h3><a class="link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
                             <a class="button" href="#">Быстрый просмотр</a>
                         </li>
-                        <li class="catalog-item hit" tabindex="0">                        
+                        <li class="catalog-item hit">                        
                             <img src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                             <img class="hit-img" src="img/hit.svg" width="61" height="61" alt="Хит">
                             <p class="catalog-price">
@@ -139,7 +138,7 @@
                             <h3><a class="link" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
                             <a class="button" href="#">Быстрый просмотр</a>
                         </li>
-                        <li class="catalog-item hit" tabindex="0">                        
+                        <li class="catalog-item hit">                        
                             <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                             <img class="hit-img" src="img/hit.svg" width="61" height="61" alt="Хит">
                             <p class="catalog-price">
@@ -150,7 +149,7 @@
                             <h3><a class="link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                             <a class="button" href="#">Быстрый просмотр</a>
                         </li>
-                        <li class="catalog-item hit" tabindex="0">                        
+                        <li class="catalog-item hit">                        
                             <img src="img/creame-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                             <img class="hit-img" src="img/hit.svg" width="61" height="61" alt="Хит">
                             <p class="catalog-price">
@@ -217,7 +216,7 @@
                             <a class="map-info map-tel" href="tel:88124502525">8 812 450-25-25</a>
                             <span class="map-time">(с 10 до 20 ежедневно)</span>
                         </p>
-                        <a class="button" href="feedback-form.html">Форма обратной связи</a>
+                        <a class="button js-modal" href="feedback-form.html">Форма обратной связи</a>
                     </div>                
                 </section>            
 
@@ -256,13 +255,35 @@
                     </p> 
                     <p class="modal-form-group">   
                         <label class="visually-hidden" for="feedback-message"></label>
-                        <textarea class="form-field" name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..." required></textarea>
+                        <textarea class="form-field modal-message" name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..." required></textarea>
                     </p>
                     <button class="button modal-submit" type="submit">Отправить</button>
                 </form>
                 <button class="modal-close" type="button">Закрыть форму</button>
             </section>
             <div class="overlay"></div>
-        </div>    
+        </div>  
+        
+        <script>
+            var link = document.querySelector(".js-modal");
+            var popup = document.querySelector(".modal");
+            var overlay = document.querySelector(".overlay");
+            var close = document.querySelector(".modal-close");
+            var name = popup.querySelector("[name=feedback-name]");
+            
+            link.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                popup.classList.add("modal-show");
+                overlay.classList.add("overlay-show");                
+                name.focus();
+            });
+            
+            close.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                popup.classList.remove("modal-show");
+                overlay.classList.remove("overlay-show");
+            });
+        </script>    
+            
     </body>
 </html>
