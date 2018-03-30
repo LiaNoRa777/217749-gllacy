@@ -247,15 +247,15 @@
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <p class="modal-form-group">
                         <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-                        <input class="form-field" type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?" required>
+                        <input class="form-field" type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
                     </p> 
                     <p class="modal-form-group">   
                         <label class="visually-hidden" for="feedback-email">Ваш e-mail</label>
-                        <input class="form-field" type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
+                        <input class="form-field" type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
                     </p> 
                     <p class="modal-form-group">   
                         <label class="visually-hidden" for="feedback-message"></label>
-                        <textarea class="form-field modal-message" name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..." required></textarea>
+                        <textarea class="form-field modal-message" name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
                     </p>
                     <button class="button modal-submit" type="submit">Отправить</button>
                 </form>
@@ -265,24 +265,38 @@
         </div>  
         
         <script>
-            var link = document.querySelector(".js-modal");
+            var linkFeedback = document.querySelector(".js-modal");
             var popup = document.querySelector(".modal");
             var overlay = document.querySelector(".overlay");
-            var close = document.querySelector(".modal-close");
-            var name = popup.querySelector("[name=feedback-name]");
+            var modalClose = document.querySelector(".modal-close");
+            var formFeedback = popup.querySelector("form");
+            var nameFeedback = popup.querySelector("[name=feedback-name]");
+            var emailFeedback = popup.querySelector("[name=feedback-email");
+            var messageFeedback = popup.querySelector("[name=feedback-message]");
             
-            link.addEventListener("click", function (evt) {
+            linkFeedback.addEventListener("click", function (evt) {
                 evt.preventDefault();
                 popup.classList.add("modal-show");
                 overlay.classList.add("overlay-show");                
-                name.focus();
-            });
+                nameFeedback.focus();
+            });    
             
-            close.addEventListener("click", function (evt) {
+            modalClose.addEventListener("click", function (evt) {
                 evt.preventDefault();
                 popup.classList.remove("modal-show");
                 overlay.classList.remove("overlay-show");
+                popup.classList.remove("modal-error")
             });
+            
+            formFeedback.addEventListener("submit", function (evt) {
+                if (!nameFeedback.value || !emailFeedback.value || !messageFeedback.value) {
+                    evt.preventDefault();
+                    popup.classList.remove("modal-error");
+                    popup.offsetWidth = popup.offsetWidth;
+                    popup.classList.add("modal-error");
+                }                 
+            });
+                                 
         </script>    
             
     </body>
