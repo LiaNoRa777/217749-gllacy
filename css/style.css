@@ -1293,6 +1293,12 @@ img {
     border-radius: 21px;
 }
 
+.map {
+    min-height: 430px;
+    margin-bottom: 6px;
+    line-height: 0;
+}
+
 .map .container {
     position: relative;
     width: 1200px;
