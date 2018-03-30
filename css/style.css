@@ -1302,9 +1302,11 @@ img {
 .map .container {
     position: relative;
     width: 1200px;
+    min-height: 430px;
     margin: 0 auto;
     margin-top: 39px;
     padding: 0;
+    background-color: #eee6ca;
 }
 
 .map-contacts {
