@@ -1293,7 +1293,7 @@ img {
     border-radius: 21px;
 }
 
-.map.container {
+.map .container {
     position: relative;
     width: 1200px;
     margin: 0 auto;
@@ -1303,6 +1303,7 @@ img {
 
 .map-contacts {
     position: absolute;
+    z-index: 2;
     top: 63px;
     right: 27px;
     width: 252px;
