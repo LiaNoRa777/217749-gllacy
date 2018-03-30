@@ -1,4 +1,3 @@
-"use strict";          
     var linkFeedback = document.querySelector(".js-modal");
     var popup = document.querySelector(".modal");
     var overlay = document.querySelector(".overlay");
