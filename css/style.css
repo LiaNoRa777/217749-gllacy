@@ -487,7 +487,7 @@ img {
 
 .cart-hover b {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: top;
 }
 
 .cart-list {
@@ -586,9 +586,10 @@ img {
 .breadcrumbs li {
     display: inline-block;
     margin-right: 2px;
+    margin-top: 5px;
     font-size: 14px;
     line-height: 16px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .breadcrumbs a {
@@ -752,22 +753,18 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    min-height: 36px;    
+    min-height: 36px; 
     font-size: 16px;
     line-height: 18px;
     background-color: #aabbb1;
     border-radius: 18px; 
 }
 
-_:-ms-fullscreen, :root .filters-choice  {
-    height: 30px;
-}
-
 .fattiness-form-group,
 .fill-form-group {
     margin: 0;   
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .filters-choice-fattiness {
@@ -1118,11 +1115,12 @@ _:-ms-fullscreen, :root .filters-choice  {
     display: inline-block;
     width: 26px;
     height: 31px;
+    margin-top: 8px;
     margin-left: -4px;
     overflow: hidden;
     text-indent: 1000px;    
     background: url("../img/currency.svg") no-repeat 50% 50%;  
-    vertical-align: baseline;
+    vertical-align: top;
 }
 
 .catalog-item .button {
@@ -1154,6 +1152,7 @@ _:-ms-fullscreen, :root .filters-choice  {
     width: 293px;
     min-height: 405px;  
     height: 100%;
+    border-radius: 5px;
 }
 
 .catalog-item:hover {
