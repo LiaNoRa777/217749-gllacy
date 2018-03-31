@@ -664,9 +664,12 @@ img {
     border-bottom: 0;
 }
 
-.filter-sorting:hover::after,
-.filter-sorting:focus-within::after {
+.filter-sorting:hover::after {
     border-top-color: black;
+}
+
+.filter-sorting:focus-within::after {
+    border-top-color: black;    
 }
 
 .filters-form-group option {
@@ -692,7 +695,10 @@ img {
     background-color: #ffffff;
 }
 
-.filter-sorting:hover .visually-hidden-select,
+.filter-sorting:hover .visually-hidden-select {
+    color: #323232;
+}
+
 .filter-sorting:focus-within .visually-hidden-select {
     color: #323232;
 }
