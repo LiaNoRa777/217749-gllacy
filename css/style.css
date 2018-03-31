@@ -487,6 +487,7 @@ img {
 
 .cart-hover b {
     display: inline-block;
+    vertical-align: baseline;
 }
 
 .cart-list {
@@ -587,6 +588,7 @@ img {
     margin-right: 2px;
     font-size: 14px;
     line-height: 16px;
+    vertical-align: middle;
 }
 
 .breadcrumbs a {
@@ -748,17 +750,24 @@ img {
 .filters-choice {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    height: 36px;
+    min-height: 36px;    
     font-size: 16px;
     line-height: 18px;
     background-color: #aabbb1;
     border-radius: 18px; 
 }
 
+_:-ms-fullscreen, :root .filters-choice  {
+    height: 30px;
+}
+
 .fattiness-form-group,
 .fill-form-group {
-    margin: 0;    
+    margin: 0;   
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .filters-choice-fattiness {
@@ -1112,7 +1121,8 @@ img {
     margin-left: -4px;
     overflow: hidden;
     text-indent: 1000px;    
-    background: url("../img/currency.svg") no-repeat 50% 50%;    
+    background: url("../img/currency.svg") no-repeat 50% 50%;  
+    vertical-align: baseline;
 }
 
 .catalog-item .button {
@@ -1142,7 +1152,8 @@ img {
     top: -6px;
     display: block;
     width: 293px;
-    height: 405px;  
+    min-height: 405px;  
+    height: 100%;
 }
 
 .catalog-item:hover {
@@ -1158,9 +1169,7 @@ img {
     background-color: rgba(248, 247, 244, 0.2);
 }
 
-.features {    
-    position: relative;
-    z-index: -2;
+.features {  
     box-sizing: border-box;
     margin-bottom: 40px;
     padding: 25px 21px 1px 20px;
@@ -1392,8 +1401,8 @@ img {
     position: relative;
 }
 
-.pagination-prev:not(.disabled)::before,
-.pagination-next:not(.disabled)::before {
+.pagination-prev:not(.disabled) a::before,
+.pagination-next:not(.disabled) a::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -1404,8 +1413,10 @@ img {
     border-radius: 50%;
 }
 
-.pagination-prev:not(.disabled):hover::before,
-.pagination-next:not(.disabled):hover::before {
+.pagination-prev:not(.disabled) a:hover::before,
+.pagination-next:not(.disabled) a:hover::before,
+.pagination-prev:not(.disabled) a:focus::before,
+.pagination-next:not(.disabled) a:focus::before {
     background-color: rgba(255, 255, 255, 0.2);    
 }
 
