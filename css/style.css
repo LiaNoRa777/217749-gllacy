@@ -889,12 +889,7 @@ img {
 }
 
 .slider-item {
-    visibility: hidden;
-    position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    margin: 0 auto; 
+    display: none;
     text-align: center;
 }
 
@@ -995,15 +990,15 @@ img {
 }
 
 #btn-1:checked ~ .site-wrapper .slider-item1 {
-    visibility: visible;
+    display: block;
 }
 
 #btn-2:checked ~ .site-wrapper .slider-item2 {
-    visibility: visible;
+    display: block;
 }
 
 #btn-3:checked ~ .site-wrapper .slider-item3 {
-    visibility: visible;
+    display: block;
 }
 
 .index-columns {
